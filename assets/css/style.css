@@ -692,4 +692,101 @@ html {
   background-color: #ffffff;
   opacity: 0.75;
   padding: 45px 25px;
+}
+
+.x-point02 {
+  width: 100%;
+  height: 1600px;
+  background-image: url(../img/point02-bg@1.5x.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100% 100%;
+}
+.x-point02--header {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  padding: 0 30px;
+}
+.x-point02--header__section-ttl {
+  width: 280px;
+  height: 340px;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  background-color: #dd871b;
+}
+.x-point02--header__section-ttl p {
+  font-size: 50px;
+}
+.x-point02--header__section-ttl h1 {
+  font-size: 150px;
+}
+.x-point02--header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+.x-point02--header__content--subttl {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100px;
+  color: #083678;
+}
+.x-point02--header__content--description {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 80px;
+  color: #444444;
+}
+.x-point02--diagram {
+  height: 1260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 30px 80px;
+}
+.x-point02--diagram__harpoon-pouch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.x-point02--diagram__harpoon-pouch--hand-pouch {
+  width: 950px;
+}
+.x-point02--diagram__harpoon-pouch--pouch-des {
+  width: 560px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 70px;
+  color: black;
+  background-color: #ffffff;
+  opacity: 0.75;
+  padding: 45px 25px;
+}
+.x-point02--diagram__room-des {
+  width: 735px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 70px;
+  color: black;
+  background-color: #ffffff;
+  opacity: 0.75;
+  padding: 45px 25px;
 }/*# sourceMappingURL=style.css.map */
