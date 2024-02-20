@@ -80,3 +80,122 @@ html {
     }
 }
 
+.x-point01{
+    width: 100%;
+    height: 1600px;
+    background-image: url(../img/point01-bg@1.5x.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100% 100%;
+
+    &--header{
+        width: 100%;
+        height: 340px;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #ffffff;
+        padding: 0 30px;
+
+        &__section-ttl{
+            width: 280px;
+            height: 340px;
+            text-align: center;
+            font-family: $font-noto;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 50px;
+            letter-spacing: 2px;
+            color: #ffffff;
+            background-color: #dd871b;
+
+            p{
+                font-size: 50px;
+            }
+
+            h1{
+                font-size: 150px;
+            }
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 20px;
+
+            &--subttl{
+                font-family: $font-noto;
+                font-size: 80px;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 100px;
+                color: #083678;
+            }
+
+            &--description{
+                font-family: $font-noto;
+                font-size: 60px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: 80px;
+                color: #444444;
+            }
+        }
+    }
+
+    &--diagram{
+        height: 1260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        padding: 90px 30px 0;
+        
+        &__product-intro{
+            width: 740px;
+            height: 111px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-noto;
+            font-size: 60px;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 90px;
+            color: #ffffff;
+            background-color: #dd871b;
+            border-radius: 50px;
+            border: solid 5px #ffffff;
+            padding: 0 30px;
+            margin-left: 30px;
+        }
+
+        &__harpoon-4axis{
+            width: 1540px;
+            margin-top: -80px;
+        }
+
+        &__harpoon-3axis{
+            width: 1145px;
+            margin-top: -80px;
+            margin-left: 395px;
+        }
+
+        &__description{
+            width: 750px;
+            font-family: $font-noto;
+            font-size: 60px;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 70px;
+            color: black;
+            position: absolute;
+            left: 55px;
+            bottom: 105px;
+            background-color: #ffffff;
+            opacity: 0.75;
+            padding: 45px 25px;
+        }
+    }
+}
