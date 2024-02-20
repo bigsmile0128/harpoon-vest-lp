@@ -403,13 +403,155 @@ html {
                 color: black;
                 background-color: #ffffff;
                 opacity: 0.75;
-                padding: 45px 25px;
+                padding: 25px 45px;
             }
         }
 
         &__detached-harpoon{
             height: 1200px;
             margin-left: -65px;
+        }
+    }
+}
+
+.x-point04 {
+    width: 100%;
+    height: 1600px;
+    background-image: url(../img/point04-bg@1.5x.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100% 100%;
+
+    &--header{
+        width: 100%;
+        height: 340px;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #ffffff;
+        padding: 0 30px;
+
+        &__section-ttl{
+            width: 280px;
+            height: 340px;
+            text-align: center;
+            font-family: $font-noto;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 50px;
+            letter-spacing: 2px;
+            color: #ffffff;
+            background-color: #dd871b;
+            z-index: 2;
+
+            p{
+                font-size: 50px;
+            }
+
+            h1{
+                font-size: 150px;
+            }
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #ffffff;
+            padding-left: 20px;
+            z-index: 2;
+
+            &--subttl{
+                font-family: $font-noto;
+                font-size: 80px;
+                font-weight: 400;
+                font-style: normal;
+                line-height: 100px;
+                color: #083678;
+            }
+
+            &--description{
+                font-family: $font-noto;
+                font-size: 56px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: 80px;
+                color: #444444;
+            }
+        }
+    }
+
+    &--diagram{
+        display: flex;
+        flex-direction: column;
+
+        &__guide{
+            display: flex;
+            height: 560px;
+            
+            &--detail-tip{
+                width: 711px;
+                height: 926px;
+                border-radius: 50%;
+                margin: -260px 0 0 0;
+                position: relative;
+                z-index: 0;
+
+                &__product-intro{
+                    width: 484px;
+                    height: 87px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: $font-noto;
+                    font-size: 55px;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: 85px;
+                    color: #ffffff;
+                    position: absolute;
+                    bottom: 170px;
+                    left: 18px;
+                    background-color: #dd871b;
+                    border-radius: 50px;
+                    border: 5px solid #ffffff;
+                    padding: 0 30px;
+                    margin-left: 30px;
+                }
+            }
+
+            &--usage{
+                width: 1000px;
+                height: 560px;
+                margin: 0 0 0 -64px;
+            }
+        }
+
+        &__footer{
+            width: 100%;
+            height: 700px;
+            background-image: url(../img/point04-sea-bg@1.5x.png);
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: 100% 100%;
+            position: relative;
+            z-index: 2;
+
+            &--room-des{
+                width: 1300px;
+                font-family: $font-noto;
+                font-size: 50px;
+                font-weight: 500;
+                font-style: normal;
+                line-height: 70px;
+                color: black;
+                position: absolute;
+                bottom: 30px;
+                right: 30px;
+                background-color: #ffffff;
+                opacity: 0.75;
+                padding: 25px 45px;
+            }
         }
     }
 }
