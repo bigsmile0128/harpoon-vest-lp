@@ -871,12 +871,13 @@ html {
   width: 996px;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   line-height: 70px;
-  color: black;
+  letter-spacing: -2px;
+  color: #222222;
   background-color: #ffffff;
-  opacity: 0.75;
+  opacity: 0.8;
   padding: 25px 45px;
 }
 .x-point03--diagram__detached-harpoon {
@@ -1010,4 +1011,127 @@ html {
   background-color: #ffffff;
   opacity: 0.75;
   padding: 25px 45px;
+}
+
+.x-point05 {
+  width: 100%;
+  height: 1600px;
+  background-image: url(../img/point05-bg@1.5x.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100% 100%;
+}
+.x-point05--header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dd871b;
+}
+.x-point05--header h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 90px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 95px;
+  color: #ffffff;
+}
+.x-point05--diagram {
+  height: 1450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 30px 30px;
+}
+.x-point05--diagram__four-slice-size {
+  width: 1540px;
+}
+.x-point05--diagram__joint-diagram {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 40px;
+  position: relative;
+}
+.x-point05--diagram__joint-diagram--caption {
+  width: 200px;
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 80px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50px;
+  border: 5px solid #ffffff;
+  padding: 0 25px;
+  background-color: #dd871b;
+}
+.x-point05--diagram__joint-diagram--harpoon-case {
+  width: 740px;
+}
+.x-point05--diagram__joint-diagram--detached-joint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.x-point05--diagram__joint-diagram--detached-joint__caption {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 95px;
+  color: #222222;
+}
+.x-point05--diagram__joint-diagram--detached-joint__joint-screw {
+  width: 700px;
+}
+.x-point05--diagram__harpoon-diagram {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.x-point05--diagram__harpoon-diagram--detail-des {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 70px;
+  color: #222222;
+  text-align: left;
+}
+.x-point05--diagram__harpoon-diagram--harpoon-sharp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.x-point05--diagram__harpoon-diagram--harpoon-sharp__caption {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 95px;
+  color: #222222;
+}
+.x-point05--diagram__harpoon-diagram--harpoon-sharp__ending-sharp {
+  width: 700px;
+}
+.x-point05--diagram__company-info {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 40px;
+  color: #111111;
+  text-align: center;
+  margin-top: -10px;
 }/*# sourceMappingURL=style.css.map */
