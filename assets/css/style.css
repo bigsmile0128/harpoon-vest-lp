@@ -16,6 +16,17 @@ a {
 
 html {
   scroll-behavior: smooth;
+  font-size: 1px;
+}
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 0.0625vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 0.2666666667vw;
+  }
 }
 
 *::-moz-selection {
@@ -328,7 +339,7 @@ figure {
   background: #2DAB94;
   gap: 50px;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
   .c-header__items {
     gap: 30px;
   }
@@ -521,617 +532,493 @@ html {
   font-size: 0.0625vw;
 }
 
-.x-intro {
-  width: 100%;
-  height: 1600px;
-  background-image: url(../img/first-view-bg@1.5x.png);
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: 100% 100%;
+.x-fv {
   position: relative;
-  padding: 30px;
 }
-.x-intro--harpoon {
-  width: 780px;
-  height: 725px;
+.x-fv--cv-btn {
+  width: 700px;
   position: absolute;
-  top: 0;
-  left: 0;
-}
-.x-intro--trusner-logo {
-  width: 785px;
-  height: 640px;
-  position: absolute;
-  top: 30px;
-  right: 50px;
-}
-.x-intro--des {
-  position: absolute;
-  bottom: 185px;
-  left: 50px;
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-}
-.x-intro--des__label {
-  width: 130px;
-  height: -moz-fit-content;
-  height: fit-content;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 96px;
-  font-weight: 500;
+  top: 45%;
+  right: 55rem;
+  font-family: "noto-sans-cjk-jp", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
   font-style: normal;
-  letter-spacing: 1px;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  text-align: left;
+  line-height: 60px;
   color: #ffffff;
-  background-color: #dd871b;
+  text-align: center;
+  background-color: #f58d05;
+  border-radius: 100px;
+  border: 5rem solid #ffffff;
+  padding: 10px 30px;
+  cursor: pointer;
   opacity: 0.9;
-  padding: 35px 0;
 }
-.x-intro--des .label2-prefix {
-  margin-top: -115px;
+@media screen and (max-width: 1440px) {
+  .x-fv--cv-btn {
+    width: 700rem;
+    font-size: 50rem;
+    line-height: 60rem;
+    padding: 10rem 30rem;
+  }
 }
-.x-intro--harpoon-set {
-  width: 980px;
-  position: absolute;
-  bottom: 30px;
-  left: 350px;
+@media screen and (max-width: 750px) {
+  .x-fv--cv-btn {
+    font-size: 40rem;
+    line-height: 55rem;
+  }
 }
-.x-intro--set-ttl {
-  width: 160px;
-  position: absolute;
-  bottom: 135px;
-  right: 70px;
+.x-fv--cv-btn:hover {
+  background-color: #dd871b;
 }
 
 .x-point01 {
-  width: 100%;
-  height: 1600px;
-  background-image: url(../img/point01-bg@1.5x.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 100% 100%;
+  position: relative;
 }
 .x-point01--header {
   width: 100%;
-  height: 340px;
   display: flex;
   justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #ffffff;
-  padding: 0 30px;
+  padding: 0 30rem;
 }
 .x-point01--header__section-ttl {
   width: 280px;
   height: 340px;
-  text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "heisei-mincho-std", serif;
   font-weight: 500;
   font-style: normal;
-  line-height: 50px;
+  line-height: 50rem;
   letter-spacing: 2px;
   color: #ffffff;
   background-color: #dd871b;
 }
+@media screen and (max-width: 1440px) {
+  .x-point01--header__section-ttl {
+    width: 230rem;
+    height: 280rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .x-point01--header__section-ttl {
+    width: 200rem;
+    height: 250rem;
+  }
+}
 .x-point01--header__section-ttl p {
-  font-size: 50px;
+  font-size: 50rem;
 }
 .x-point01--header__section-ttl h1 {
-  font-size: 150px;
+  font-size: 150rem;
 }
 .x-point01--header__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 20px;
+  padding-left: 20rem;
 }
 .x-point01--header__content--subttl {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "heisei-mincho-std", serif;
   font-size: 80px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 100px;
-  color: #083678;
-}
-.x-point01--header__content--description {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 60px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 80px;
-  color: #444444;
-}
-.x-point01--diagram {
-  height: 1260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: relative;
-  padding: 90px 30px 0;
-}
-.x-point01--diagram__product-intro {
-  width: 740px;
-  height: 111px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   line-height: 90px;
-  color: #ffffff;
-  background-color: #dd871b;
-  border-radius: 50px;
-  border: 5px solid #ffffff;
-  padding: 0 30px;
-  margin-left: 30px;
+  color: #083678;
 }
-.x-point01--diagram__harpoon-4axis {
-  width: 1540px;
-  margin-top: -80px;
+@media screen and (max-width: 1440px) {
+  .x-point01--header__content--subttl {
+    font-size: 70rem;
+    line-height: 80rem;
+  }
 }
-.x-point01--diagram__harpoon-3axis {
-  width: 1145px;
-  margin-top: -80px;
-  margin-left: 395px;
+@media screen and (max-width: 750px) {
+  .x-point01--header__content--subttl {
+    font-size: 70rem;
+    line-height: 80rem;
+  }
 }
-.x-point01--diagram__description {
-  width: 750px;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 60px;
-  font-weight: 400;
+.x-point01--header__content--description {
+  font-family: "noto-sans-cjk-jp", sans-serif;
+  font-size: 55px;
+  font-weight: 600;
   font-style: normal;
   line-height: 70px;
-  color: black;
+  color: #444444;
+}
+@media screen and (max-width: 1440px) {
+  .x-point01--header__content--description {
+    font-size: 60rem;
+    line-height: 70rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .x-point01--header__content--description {
+    font-size: 55rem;
+    line-height: 65rem;
+  }
+}
+.x-point01--introduce {
   position: absolute;
-  left: 55px;
-  bottom: 105px;
-  background-color: #ffffff;
-  opacity: 0.75;
-  padding: 45px 25px;
+  bottom: 10%;
+  right: 30rem;
+  font-family: "heisei-mincho-std", serif;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 60px;
+  color: #083678;
+}
+@media screen and (max-width: 1440px) {
+  .x-point01--introduce {
+    font-size: 50rem;
+    line-height: 60rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .x-point01--introduce {
+    font-size: 55rem;
+    line-height: 65rem;
+  }
 }
 
 .x-point02 {
-  width: 100%;
-  height: 1600px;
-  background-image: url(../img/point02-bg@1.5x.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 100% 100%;
+  position: relative;
 }
 .x-point02--header {
   width: 100%;
-  height: 340px;
   display: flex;
   justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #ffffff;
-  padding: 0 30px;
+  padding: 0 30rem;
 }
 .x-point02--header__section-ttl {
   width: 280px;
   height: 340px;
-  text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "heisei-mincho-std", serif;
   font-weight: 500;
   font-style: normal;
-  line-height: 50px;
+  line-height: 50rem;
   letter-spacing: 2px;
   color: #ffffff;
   background-color: #dd871b;
 }
+@media screen and (max-width: 1440px) {
+  .x-point02--header__section-ttl {
+    width: 230rem;
+    height: 280rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .x-point02--header__section-ttl {
+    width: 200rem;
+    height: 250rem;
+  }
+}
 .x-point02--header__section-ttl p {
-  font-size: 50px;
+  font-size: 50rem;
 }
 .x-point02--header__section-ttl h1 {
-  font-size: 150px;
+  font-size: 150rem;
 }
 .x-point02--header__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 20px;
+  padding-left: 20rem;
 }
 .x-point02--header__content--subttl {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "heisei-mincho-std", serif;
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
-  line-height: 100px;
+  line-height: 90px;
   color: #083678;
 }
+@media screen and (max-width: 1440px) {
+  .x-point02--header__content--subttl {
+    font-size: 70rem;
+    line-height: 80rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .x-point02--header__content--subttl {
+    font-size: 70rem;
+    line-height: 80rem;
+  }
+}
 .x-point02--header__content--description {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 60px;
-  font-weight: 500;
+  font-family: "noto-sans-cjk-jp", sans-serif;
+  font-size: 55px;
+  font-weight: 600;
   font-style: normal;
-  line-height: 80px;
+  line-height: 70px;
   color: #444444;
 }
-.x-point02--diagram {
-  height: 1260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 30px 80px;
+@media screen and (max-width: 1440px) {
+  .x-point02--header__content--description {
+    font-size: 60rem;
+    line-height: 70rem;
+  }
 }
-.x-point02--diagram__harpoon-pouch {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.x-point02--diagram__harpoon-pouch--hand-pouch {
-  width: 950px;
-}
-.x-point02--diagram__harpoon-pouch--pouch-des {
-  width: 560px;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 70px;
-  color: black;
-  background-color: #ffffff;
-  opacity: 0.75;
-  padding: 45px 25px;
-}
-.x-point02--diagram__room-des {
-  width: 735px;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 70px;
-  color: black;
-  background-color: #ffffff;
-  opacity: 0.75;
-  padding: 45px 25px;
+@media screen and (max-width: 750px) {
+  .x-point02--header__content--description {
+    font-size: 55rem;
+    line-height: 65rem;
+  }
 }
 
 .x-point03 {
-  width: 100%;
-  height: 1600px;
-  background-image: url(../img/point03-bg@1.5x.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 100% 100%;
+  position: relative;
 }
 .x-point03--header {
   width: 100%;
-  height: 340px;
   display: flex;
   justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #ffffff;
-  padding: 0 30px;
+  padding: 0 30rem;
 }
 .x-point03--header__section-ttl {
   width: 280px;
   height: 340px;
-  text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "heisei-mincho-std", serif;
   font-weight: 500;
   font-style: normal;
-  line-height: 50px;
+  line-height: 50rem;
   letter-spacing: 2px;
   color: #ffffff;
   background-color: #dd871b;
 }
+@media screen and (max-width: 1440px) {
+  .x-point03--header__section-ttl {
+    width: 230rem;
+    height: 280rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .x-point03--header__section-ttl {
+    width: 200rem;
+    height: 250rem;
+  }
+}
 .x-point03--header__section-ttl p {
-  font-size: 50px;
+  font-size: 50rem;
 }
 .x-point03--header__section-ttl h1 {
-  font-size: 150px;
+  font-size: 150rem;
 }
 .x-point03--header__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 20px;
+  padding-left: 20rem;
 }
 .x-point03--header__content--subttl {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 80px;
-  font-weight: 400;
+  font-family: "heisei-mincho-std", serif;
+  font-size: 70px;
+  font-weight: 600;
   font-style: normal;
-  line-height: 100px;
+  line-height: 90px;
   color: #083678;
 }
+@media screen and (max-width: 1440px) {
+  .x-point03--header__content--subttl {
+    font-size: 60rem;
+    line-height: 70rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .x-point03--header__content--subttl {
+    font-size: 70rem;
+    line-height: 80rem;
+  }
+}
 .x-point03--header__content--description {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 56px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 80px;
-  color: #444444;
-}
-.x-point03--diagram {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px;
-}
-.x-point03--diagram__guide {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.x-point03--diagram__guide--harpoon-tip {
-  width: 750px;
-  height: 750px;
-  border-radius: 50%;
-  border: 5px solid #083678;
-}
-.x-point03--diagram__guide--room-des {
-  width: 996px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "noto-sans-cjk-jp", sans-serif;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   line-height: 70px;
-  letter-spacing: -2px;
-  color: #222222;
-  background-color: #ffffff;
-  opacity: 0.8;
-  padding: 25px 45px;
+  color: #444444;
 }
-.x-point03--diagram__detached-harpoon {
-  height: 1200px;
-  margin-left: -65px;
+@media screen and (max-width: 1440px) {
+  .x-point03--header__content--description {
+    font-size: 55rem;
+    line-height: 65rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .x-point03--header__content--description {
+    font-size: 50rem;
+    line-height: 60rem;
+  }
 }
 
 .x-point04 {
-  width: 100%;
-  height: 1600px;
-  background-image: url(../img/point04-bg@1.5x.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 100% 100%;
+  position: relative;
 }
 .x-point04--header {
   width: 100%;
-  height: 340px;
   display: flex;
   justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #ffffff;
-  padding: 0 30px;
+  padding: 0 30rem;
 }
 .x-point04--header__section-ttl {
   width: 280px;
   height: 340px;
-  text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "heisei-mincho-std", serif;
   font-weight: 500;
   font-style: normal;
-  line-height: 50px;
+  line-height: 50rem;
   letter-spacing: 2px;
   color: #ffffff;
   background-color: #dd871b;
-  z-index: 2;
+}
+@media screen and (max-width: 1440px) {
+  .x-point04--header__section-ttl {
+    width: 230rem;
+    height: 280rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .x-point04--header__section-ttl {
+    width: 200rem;
+    height: 250rem;
+  }
 }
 .x-point04--header__section-ttl p {
-  font-size: 50px;
+  font-size: 50rem;
 }
 .x-point04--header__section-ttl h1 {
-  font-size: 150px;
+  font-size: 150rem;
 }
 .x-point04--header__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: #ffffff;
-  padding-left: 20px;
-  z-index: 2;
+  padding-left: 20rem;
 }
 .x-point04--header__content--subttl {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "heisei-mincho-std", serif;
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
-  line-height: 100px;
+  line-height: 90px;
   color: #083678;
 }
+@media screen and (max-width: 1440px) {
+  .x-point04--header__content--subttl {
+    font-size: 70rem;
+    line-height: 80rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .x-point04--header__content--subttl {
+    font-size: 70rem;
+    line-height: 80rem;
+  }
+}
 .x-point04--header__content--description {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 56px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 80px;
-  color: #444444;
-}
-.x-point04--diagram {
-  display: flex;
-  flex-direction: column;
-}
-.x-point04--diagram__guide {
-  display: flex;
-  height: 560px;
-}
-.x-point04--diagram__guide--detail-tip {
-  width: 711px;
-  height: 926px;
-  border-radius: 50%;
-  margin: -260px 0 0 0;
-  position: relative;
-  z-index: 0;
-}
-.x-point04--diagram__guide--detail-tip__product-intro {
-  width: 484px;
-  height: 87px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "noto-sans-cjk-jp", sans-serif;
   font-size: 55px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 85px;
-  color: #ffffff;
-  position: absolute;
-  bottom: 170px;
-  left: 18px;
-  background-color: #dd871b;
-  border-radius: 50px;
-  border: 5px solid #ffffff;
-  padding: 0 30px;
-  margin-left: 30px;
-}
-.x-point04--diagram__guide--usage {
-  width: 1000px;
-  height: 560px;
-  margin: 0 0 0 -64px;
-}
-.x-point04--diagram__footer {
-  width: 100%;
-  height: 700px;
-  background-image: url(../img/point04-sea-bg@1.5x.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 100% 100%;
-  position: relative;
-  z-index: 2;
-}
-.x-point04--diagram__footer--room-des {
-  width: 1300px;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 50px;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   line-height: 70px;
-  color: black;
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  background-color: #ffffff;
-  opacity: 0.75;
-  padding: 25px 45px;
+  color: #444444;
+}
+@media screen and (max-width: 1440px) {
+  .x-point04--header__content--description {
+    font-size: 55rem;
+    line-height: 70rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .x-point04--header__content--description {
+    font-size: 55rem;
+    line-height: 65rem;
+  }
 }
 
 .x-point05 {
-  width: 100%;
-  height: 1600px;
-  background-image: url(../img/point05-bg@1.5x.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 100% 100%;
+  position: relative;
 }
 .x-point05--header {
   width: 100%;
-  height: 150px;
+  height: 150rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #dd871b;
 }
 .x-point05--header h1 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "heisei-mincho-std", serif;
   font-size: 90px;
   font-weight: 600;
   font-style: normal;
   line-height: 95px;
   color: #ffffff;
 }
-.x-point05--diagram {
-  height: 1450px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 40px;
-  padding: 50px 30px 30px;
+@media screen and (max-width: 1440px) {
+  .x-point05--header h1 {
+    font-size: 80rem;
+    line-height: 85rem;
+  }
 }
-.x-point05--diagram__four-slice-size {
-  width: 1540px;
+@media screen and (max-width: 750px) {
+  .x-point05--header h1 {
+    font-size: 80rem;
+    line-height: 85rem;
+  }
 }
-.x-point05--diagram__joint-diagram {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  gap: 40px;
-  position: relative;
-}
-.x-point05--diagram__joint-diagram--caption {
-  width: 200px;
+.x-point05--company-info {
   position: absolute;
-  top: 50px;
-  left: 45px;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 45px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 80px;
-  color: #ffffff;
-  text-align: center;
-  border-radius: 50px;
-  border: 5px solid #ffffff;
-  padding: 0 25px;
-  background-color: #dd871b;
-}
-.x-point05--diagram__joint-diagram--harpoon-case {
-  width: 740px;
-}
-.x-point05--diagram__joint-diagram--detached-joint {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.x-point05--diagram__joint-diagram--detached-joint__caption {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 50px;
+  bottom: 30rem;
+  left: 15%;
+  font-family: "noto-sans-cjk-jp", sans-serif;
+  font-size: 25rem;
   font-weight: 500;
   font-style: normal;
-  line-height: 95px;
-  color: #222222;
-}
-.x-point05--diagram__joint-diagram--detached-joint__joint-screw {
-  width: 700px;
-}
-.x-point05--diagram__harpoon-diagram {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
-.x-point05--diagram__harpoon-diagram--detail-des {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 50px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 70px;
-  color: #222222;
-  text-align: left;
-}
-.x-point05--diagram__harpoon-diagram--harpoon-sharp {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.x-point05--diagram__harpoon-diagram--harpoon-sharp__caption {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 50px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 95px;
-  color: #222222;
-}
-.x-point05--diagram__harpoon-diagram--harpoon-sharp__ending-sharp {
-  width: 700px;
-}
-.x-point05--diagram__company-info {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 40px;
+  line-height: 40rem;
   color: #111111;
   text-align: center;
-  margin-top: -10px;
+}
+@media screen and (max-width: 1440px) {
+  .x-point05--company-info {
+    left: 25%;
+  }
 }/*# sourceMappingURL=style.css.map */

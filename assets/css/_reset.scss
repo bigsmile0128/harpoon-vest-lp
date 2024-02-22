@@ -19,7 +19,13 @@ a{
 
 html{
   scroll-behavior: smooth;
-  
+  font-size: 1px;
+  @include media-pc {
+    font-size: calc((100/1600)*1vw);
+  }
+  @include media-sp {
+    font-size: calc((100/375)*1vw);
+  }
 }
 
 *::selection{

@@ -8,112 +8,90 @@ html {
     font-size: calc(100vw / 1600);
 }
 
-.x-intro {
-    width: 100%;
-    height: 1600px;
-    background-image: url(../img/first-view-bg@1.5x.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 100% 100%;
-
+.x-fv {
     position: relative;
-    padding: 30px;
 
-    &--harpoon{
-        width: 780px;
-        height: 725px;
+    &--cv-btn{
+        width: 700px;
         position: absolute;
-        top: 0;
-        left: 0;
-    }
+        top: 45%;
+        right: 55rem;
+        font-family: $font-notocjk;
+        font-size: 50px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 60px;
+        color: #ffffff;
+        text-align: center;
+        background-color: #f58d05;
+        border-radius: 100px;
+        border: 5rem solid #ffffff;
+        padding: 10px 30px;
+        cursor: pointer;
+        opacity: 0.9;
 
-    &--trusner-logo{
-        width: 785px;
-        height: 640px;
-        position: absolute;
-        top: 30px;
-        right: 50px;
-    }
+        @include media-pc {
+            width: 700rem;
+            font-size: 50rem;
+            line-height: 60rem;
+            padding: 10rem 30rem;
+        }
 
-    &--des{
-        position: absolute;
-        bottom: 185px;
-        left: 50px;
-        display: flex;
-        justify-content: space-between;
-        gap: 15px;
+        @include media-sp {
+            font-size: 40rem;
+            line-height: 55rem;
+        }
 
-        &__label{
-            width: 130px;
-            height: fit-content;
-            font-family: $font-noto;
-            font-size: 96px;
-            font-weight: 500;
-            font-style: normal;
-            letter-spacing: 1px;
-            writing-mode: vertical-lr;
-            text-orientation: upright;
-            text-align: left;
-            color: #ffffff;
+        &:hover{
             background-color: #dd871b;
-            opacity: 0.9;
-            padding: 35px 0;
         }
-
-        .label2-prefix {
-            margin-top: -115px;
-        }
-    }
-
-    &--harpoon-set{
-        width: 980px;
-        position: absolute;
-        bottom: 30px;
-        left: 350px;
-    }
-
-    &--set-ttl{
-        width: 160px;
-        position: absolute;
-        bottom: 135px;
-        right: 70px;
     }
 }
 
 .x-point01{
-    width: 100%;
-    height: 1600px;
-    background-image: url(../img/point01-bg@1.5x.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100% 100%;
+    position: relative;
 
     &--header{
         width: 100%;
-        height: 340px;
         display: flex;
         justify-content: flex-start;
+        position: absolute;
+        top: 0;
+        left: 0;
         background-color: #ffffff;
-        padding: 0 30px;
+        padding: 0 30rem;
 
         &__section-ttl{
             width: 280px;
             height: 340px;
-            text-align: center;
-            font-family: $font-noto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-heisei;
             font-weight: 500;
             font-style: normal;
-            line-height: 50px;
+            line-height: 50rem;
             letter-spacing: 2px;
             color: #ffffff;
             background-color: #dd871b;
 
+            @include media-pc {
+                width: 230rem;
+                height: 280rem;
+            }
+
+            @include media-sp {
+                width: 200rem;
+                height: 250rem;
+            }
+
             p{
-                font-size: 50px;
+                font-size: 50rem;
             }
 
             h1{
-                font-size: 150px;
+                font-size: 150rem;
             }
         }
 
@@ -122,118 +100,115 @@ html {
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            padding-left: 20px;
+            padding-left: 20rem;
 
             &--subttl{
-                font-family: $font-noto;
+                font-family: $font-heisei;
                 font-size: 80px;
-                font-weight: 400;
+                font-weight: 600;
                 font-style: normal;
-                line-height: 100px;
+                line-height: 90px;
                 color: #083678;
+
+                @include media-pc {
+                    font-size: 70rem;
+                    line-height: 80rem;
+                }
+
+                @include media-sp {
+                    font-size: 70rem;
+                    line-height: 80rem;
+                }
             }
 
             &--description{
-                font-family: $font-noto;
-                font-size: 60px;
-                font-weight: 500;
+                font-family: $font-notocjk;
+                font-size: 55px;
+                font-weight: 600;
                 font-style: normal;
-                line-height: 80px;
+                line-height: 70px;
                 color: #444444;
+
+                @include media-pc {
+                    font-size: 60rem;
+                    line-height: 70rem;
+                }
+
+                @include media-sp {
+                    font-size: 55rem;
+                    line-height: 65rem;
+                }
             }
         }
     }
 
-    &--diagram{
-        height: 1260px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        position: relative;
-        padding: 90px 30px 0;
-        
-        &__product-intro{
-            width: 740px;
-            height: 111px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: $font-noto;
-            font-size: 60px;
-            font-weight: 400;
-            font-style: normal;
-            line-height: 90px;
-            color: #ffffff;
-            background-color: #dd871b;
-            border-radius: 50px;
-            border: 5px solid #ffffff;
-            padding: 0 30px;
-            margin-left: 30px;
+    &--introduce {
+        position: absolute;
+        bottom: 10%;
+        right: 30rem;
+        font-family: $font-heisei;
+        font-size: 50px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 60px;
+        color: #083678;
+
+        @include media-pc {
+            font-size: 50rem;
+            line-height: 60rem;
         }
 
-        &__harpoon-4axis{
-            width: 1540px;
-            margin-top: -80px;
-        }
-
-        &__harpoon-3axis{
-            width: 1145px;
-            margin-top: -80px;
-            margin-left: 395px;
-        }
-
-        &__description{
-            width: 750px;
-            font-family: $font-noto;
-            font-size: 60px;
-            font-weight: 400;
-            font-style: normal;
-            line-height: 70px;
-            color: black;
-            position: absolute;
-            left: 55px;
-            bottom: 105px;
-            background-color: #ffffff;
-            opacity: 0.75;
-            padding: 45px 25px;
+        @include media-sp {
+            font-size: 55rem;
+            line-height: 65rem;
         }
     }
 }
 
 .x-point02 {
-    width: 100%;
-    height: 1600px;
-    background-image: url(../img/point02-bg@1.5x.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100% 100%;
+    position: relative;
 
     &--header{
         width: 100%;
-        height: 340px;
         display: flex;
         justify-content: flex-start;
+        position: absolute;
+        top: 0;
+        left: 0;
         background-color: #ffffff;
-        padding: 0 30px;
+        padding: 0 30rem;
 
         &__section-ttl{
             width: 280px;
             height: 340px;
-            text-align: center;
-            font-family: $font-noto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-heisei;
             font-weight: 500;
             font-style: normal;
-            line-height: 50px;
+            line-height: 50rem;
             letter-spacing: 2px;
             color: #ffffff;
             background-color: #dd871b;
 
+            @include media-pc {
+                width: 230rem;
+                height: 280rem;
+            }
+
+            @include media-sp {
+                width: 200rem;
+                height: 250rem;
+            }
+
             p{
-                font-size: 50px;
+                font-size: 50rem;
             }
 
             h1{
-                font-size: 150px;
+                font-size: 150rem;
             }
         }
 
@@ -242,107 +217,93 @@ html {
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            padding-left: 20px;
+            padding-left: 20rem;
 
             &--subttl{
-                font-family: $font-noto;
+                font-family: $font-heisei;
                 font-size: 80px;
-                font-weight: 400;
+                font-weight: 600;
                 font-style: normal;
-                line-height: 100px;
+                line-height: 90px;
                 color: #083678;
+
+                @include media-pc {
+                    font-size: 70rem;
+                    line-height: 80rem;
+                }
+
+                @include media-sp {
+                    font-size: 70rem;
+                    line-height: 80rem;
+                }
             }
 
             &--description{
-                font-family: $font-noto;
-                font-size: 60px;
-                font-weight: 500;
-                font-style: normal;
-                line-height: 80px;
-                color: #444444;
-            }
-        }
-    }
-
-    &--diagram{
-        height: 1260px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 0 30px 80px;
-
-        &__harpoon-pouch{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            &--hand-pouch{
-                width: 950px;
-            }
-
-            &--pouch-des{
-                width: 560px;
-                font-family: $font-noto;
-                font-size: 50px;
-                font-weight: 400;
+                font-family: $font-notocjk;
+                font-size: 55px;
+                font-weight: 600;
                 font-style: normal;
                 line-height: 70px;
-                color: black;
-                background-color: #ffffff;
-                opacity: 0.75;
-                padding: 45px 25px;
-            }
-        }
+                color: #444444;
 
-        &__room-des{
-            width: 735px;
-            font-family: $font-noto;
-            font-size: 50px;
-            font-weight: 400;
-            font-style: normal;
-            line-height: 70px;
-            color: black;
-            background-color: #ffffff;
-            opacity: 0.75;
-            padding: 45px 25px;
+                @include media-pc {
+                    font-size: 60rem;
+                    line-height: 70rem;
+                }
+
+                @include media-sp {
+                    font-size: 55rem;
+                    line-height: 65rem;
+                }
+            }
         }
     }
 }
 
 .x-point03 {
-    width: 100%;
-    height: 1600px;
-    background-image: url(../img/point03-bg@1.5x.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100% 100%;
+    position: relative;
 
     &--header{
         width: 100%;
-        height: 340px;
         display: flex;
         justify-content: flex-start;
+        position: absolute;
+        top: 0;
+        left: 0;
         background-color: #ffffff;
-        padding: 0 30px;
+        padding: 0 30rem;
 
         &__section-ttl{
             width: 280px;
             height: 340px;
-            text-align: center;
-            font-family: $font-noto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-heisei;
             font-weight: 500;
             font-style: normal;
-            line-height: 50px;
+            line-height: 50rem;
             letter-spacing: 2px;
             color: #ffffff;
             background-color: #dd871b;
 
+            @include media-pc {
+                width: 230rem;
+                height: 280rem;
+            }
+
+            @include media-sp {
+                width: 200rem;
+                height: 250rem;
+            }
+
             p{
-                font-size: 50px;
+                font-size: 50rem;
             }
 
             h1{
-                font-size: 150px;
+                font-size: 150rem;
             }
         }
 
@@ -351,105 +312,93 @@ html {
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            padding-left: 20px;
+            padding-left: 20rem;
 
             &--subttl{
-                font-family: $font-noto;
-                font-size: 80px;
-                font-weight: 400;
+                font-family: $font-heisei;
+                font-size: 70px;
+                font-weight: 600;
                 font-style: normal;
-                line-height: 100px;
+                line-height: 90px;
                 color: #083678;
+
+                @include media-pc {
+                    font-size: 60rem;
+                    line-height: 70rem;
+                }
+
+                @include media-sp {
+                    font-size: 70rem;
+                    line-height: 80rem;
+                }
             }
 
             &--description{
-                font-family: $font-noto;
-                font-size: 56px;
-                font-weight: 500;
-                font-style: normal;
-                line-height: 80px;
-                color: #444444;
-            }
-        }
-    }
-
-    &--diagram{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 30px;
-
-        &__guide{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-
-            &--harpoon-tip{
-                width: 750px;
-                height: 750px;
-                border-radius: 50%;
-                border: 5px solid #083678;
-            }
-
-            &--room-des{
-                width: 996px;
-                font-family: $font-noto;
+                font-family: $font-notocjk;
                 font-size: 50px;
-                font-weight: 500;
+                font-weight: 600;
                 font-style: normal;
                 line-height: 70px;
-                letter-spacing: -2px;
-                color: #222222;
-                background-color: #ffffff;
-                opacity: 0.8;
-                padding: 25px 45px;
-            }
-        }
+                color: #444444;
 
-        &__detached-harpoon{
-            height: 1200px;
-            margin-left: -65px;
+                @include media-pc {
+                    font-size: 55rem;
+                    line-height: 65rem;
+                }
+
+                @include media-sp {
+                    font-size: 50rem;
+                    line-height: 60rem;
+                }
+            }
         }
     }
 }
 
 .x-point04 {
-    width: 100%;
-    height: 1600px;
-    background-image: url(../img/point04-bg@1.5x.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100% 100%;
+    position: relative;
 
     &--header{
         width: 100%;
-        height: 340px;
         display: flex;
         justify-content: flex-start;
+        position: absolute;
+        top: 0;
+        left: 0;
         background-color: #ffffff;
-        padding: 0 30px;
+        padding: 0 30rem;
 
         &__section-ttl{
             width: 280px;
             height: 340px;
-            text-align: center;
-            font-family: $font-noto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: $font-heisei;
             font-weight: 500;
             font-style: normal;
-            line-height: 50px;
+            line-height: 50rem;
             letter-spacing: 2px;
             color: #ffffff;
             background-color: #dd871b;
-            z-index: 2;
+
+            @include media-pc {
+                width: 230rem;
+                height: 280rem;
+            }
+
+            @include media-sp {
+                width: 200rem;
+                height: 250rem;
+            }
 
             p{
-                font-size: 50px;
+                font-size: 50rem;
             }
 
             h1{
-                font-size: 150px;
+                font-size: 150rem;
             }
         }
 
@@ -458,240 +407,97 @@ html {
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            background-color: #ffffff;
-            padding-left: 20px;
-            z-index: 2;
+            padding-left: 20rem;
 
             &--subttl{
-                font-family: $font-noto;
+                font-family: $font-heisei;
                 font-size: 80px;
-                font-weight: 400;
+                font-weight: 600;
                 font-style: normal;
-                line-height: 100px;
+                line-height: 90px;
                 color: #083678;
-            }
 
-            &--description{
-                font-family: $font-noto;
-                font-size: 56px;
-                font-weight: 500;
-                font-style: normal;
-                line-height: 80px;
-                color: #444444;
-            }
-        }
-    }
+                @include media-pc {
+                    font-size: 70rem;
+                    line-height: 80rem;
+                }
 
-    &--diagram{
-        display: flex;
-        flex-direction: column;
-
-        &__guide{
-            display: flex;
-            height: 560px;
-            
-            &--detail-tip{
-                width: 711px;
-                height: 926px;
-                border-radius: 50%;
-                margin: -260px 0 0 0;
-                position: relative;
-                z-index: 0;
-
-                &__product-intro{
-                    width: 484px;
-                    height: 87px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-family: $font-noto;
-                    font-size: 55px;
-                    font-weight: 400;
-                    font-style: normal;
-                    line-height: 85px;
-                    color: #ffffff;
-                    position: absolute;
-                    bottom: 170px;
-                    left: 18px;
-                    background-color: #dd871b;
-                    border-radius: 50px;
-                    border: 5px solid #ffffff;
-                    padding: 0 30px;
-                    margin-left: 30px;
+                @include media-sp {
+                    font-size: 70rem;
+                    line-height: 80rem;
                 }
             }
 
-            &--usage{
-                width: 1000px;
-                height: 560px;
-                margin: 0 0 0 -64px;
-            }
-        }
-
-        &__footer{
-            width: 100%;
-            height: 700px;
-            background-image: url(../img/point04-sea-bg@1.5x.png);
-            background-repeat: no-repeat;
-            background-position: top right;
-            background-size: 100% 100%;
-            position: relative;
-            z-index: 2;
-
-            &--room-des{
-                width: 1300px;
-                font-family: $font-noto;
-                font-size: 50px;
-                font-weight: 500;
+            &--description{
+                font-family: $font-notocjk;
+                font-size: 55px;
+                font-weight: 600;
                 font-style: normal;
                 line-height: 70px;
-                color: black;
-                position: absolute;
-                bottom: 30px;
-                right: 30px;
-                background-color: #ffffff;
-                opacity: 0.75;
-                padding: 25px 45px;
+                color: #444444;
+
+                @include media-pc {
+                    font-size: 55rem;
+                    line-height: 70rem;
+                }
+
+                @include media-sp {
+                    font-size: 55rem;
+                    line-height: 65rem;
+                }
             }
         }
     }
 }
 
 .x-point05 {
-    width: 100%;
-    height: 1600px;
-    background-image: url(../img/point05-bg@1.5x.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 100% 100%;
+    position: relative;
 
     &--header{
         width: 100%;
-        height: 150px;
+        height: 150rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
         background-color: #dd871b;
 
         h1{
-            font-family: $font-noto;
+            font-family: $font-heisei;
             font-size: 90px;
             font-weight: 600;
             font-style: normal;
             line-height: 95px;
             color: #ffffff;
+
+            @include media-pc{
+                font-size: 80rem;
+                line-height: 85rem;
+            }
+
+            @include media-sp{
+                font-size: 80rem;
+                line-height: 85rem;
+            }
         }
     }
 
-    &--diagram{
-        height: 1450px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 40px;
-        padding: 50px 30px 30px;
+    &--company-info{
+        position: absolute;
+        bottom: 30rem;
+        left: 15%;
+        font-family: $font-notocjk;
+        font-size: 25rem;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 40rem;
+        color: #111111;
+        text-align: center;
 
-        &__four-slice-size{
-            width: 1540px;
-        }
-
-        &__joint-diagram{
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            gap: 40px;
-            position: relative;
-
-            &--caption{
-                width: 200px;
-                position: absolute;
-                top: 50px;
-                left: 45px;
-                font-family: $font-noto;
-                font-size: 45px;
-                font-weight: 400;
-                font-style: normal;
-                line-height: 80px;
-                color: #ffffff;
-                text-align: center;
-                border-radius: 50px;
-                border: 5px solid #ffffff;
-                padding: 0 25px;
-                background-color: #dd871b;
-            }
-
-            &--harpoon-case{
-                width: 740px;
-            }
-
-            &--detached-joint{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                
-                &__caption{
-                    font-family: $font-noto;
-                    font-size: 50px;
-                    font-weight: 500;
-                    font-style: normal;
-                    line-height: 95px;
-                    color: #222222;
-                }
-
-                &__joint-screw{
-                    width: 700px;
-                }
-            }
-        }
-
-        &__harpoon-diagram{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 40px;
-
-            &--detail-des{
-                font-family: $font-noto;
-                font-size: 50px;
-                font-weight: 500;
-                font-style: normal;
-                line-height: 70px;
-                color: #222222;
-                text-align: left;
-            }
-
-            &--harpoon-sharp{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                &__caption{
-                    font-family: $font-noto;
-                    font-size: 50px;
-                    font-weight: 500;
-                    font-style: normal;
-                    line-height: 95px;
-                    color: #222222;
-                }
-
-                &__ending-sharp{
-                    width: 700px;
-                }
-            }
-        }
-
-        &__company-info{
-            font-family: $font-noto;
-            font-size: 25px;
-            font-weight: 500;
-            font-style: normal;
-            line-height: 40px;
-            color: #111111;
-            text-align: center;
-            margin-top: -10px;
+        @include media-pc {
+            left: 25%;
         }
     }
 }
